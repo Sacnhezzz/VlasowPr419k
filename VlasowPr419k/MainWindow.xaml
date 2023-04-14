@@ -1,0 +1,32 @@
+﻿<Window x:Class="VlasowPr419k.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VlasowPr419k"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="Scenarist" HorizontalAlignment="Left" Height="23" Margin="139,73,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="Scenarist_TextChanged"/>
+        <TextBox x:Name="Hudoz" HorizontalAlignment="Left" Height="23" Margin="139,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="Hudoz_TextChanged"/>
+        <TextBox x:Name="Izdatel" HorizontalAlignment="Left" Height="23" Margin="139,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="Izdatel_TextChanged"/>
+        <TextBox x:Name="NomWipusk" HorizontalAlignment="Left" Height="23" Margin="139,246,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" PreviewTextInput="NomWipusk_PreviewTextInput"/>
+        <TextBlock Name="textsms" HorizontalAlignment="Left" Margin="273,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="2.88"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.402"/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <Label Content="Сценарист" HorizontalAlignment="Left" Margin="55,73,0,0" VerticalAlignment="Top"/>
+        <Label Content="Художник" HorizontalAlignment="Left" Margin="58,126,0,0" VerticalAlignment="Top"/>
+        <Label Content="Издательство" HorizontalAlignment="Left" Margin="39,182,0,0" VerticalAlignment="Top"/>
+        <Label Content="Номер выпуска" HorizontalAlignment="Left" Margin="27,246,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textsms1" HorizontalAlignment="Left" Margin="282,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textsms2" HorizontalAlignment="Left" Margin="282,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
